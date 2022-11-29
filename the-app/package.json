@@ -1,7 +1,7 @@
 {
   "name": "the-app",
   "version": "0.1.0",
-  "homepage": "https://DupuyT.github.io/Final_Project_Deployment",
+  "homepage": "https://DupuyT.github.io/Front-End-Web_Dev-Final-Project",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
