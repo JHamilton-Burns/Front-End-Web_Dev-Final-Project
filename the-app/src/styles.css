@@ -268,6 +268,21 @@
     bottom: 300px;
     left: 220px;
   }
+
+  .footsteps-3 .footstep.left {
+    bottom: 385px;
+    left: 380px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-3 .footstep.right {
+    bottom: 375px;
+    left: 385px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-3 .scroll-name {
+    bottom: 400px;
+    left: 320px;
+  }
   
   .instructions {
     text-align: center;
@@ -390,6 +405,7 @@
   .map-base.active .footsteps-2 .scroll-name {
     animation: 15s scroll-2 ease 3.2s forwards;
   }
+<<<<<<< Updated upstream
 
 
 
@@ -642,6 +658,14 @@
     animation: 15s scroll-2 ease 3.2s forwards;
   }
   
+=======
+  .map-base.active .footsteps-3 .footstep {
+    animation: 15s footsteps-3 ease 3s forwards;
+  }
+  .map-base.active .footsteps-3 .scroll-name {
+    animation: 15s scroll-3 ease 3s forwards;
+  }
+>>>>>>> Stashed changes
   .map8 {
     --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF1%5D.png");
   }
@@ -713,6 +737,27 @@
       transform: translate(-180px, -25px) rotate(-90deg);
     }
   }
+  @keyframes footsteps-3 {
+    10% {
+      transform: translate(35px, -5px) rotate(30deg);
+    }
+    20% {
+      transform: translate(40px, -10px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -20px) rotate(20deg);
+    }
+    40% {
+      transform: translate(30px, -10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(10px,-32px) rotate(10deg);
+    }
+    100% {
+      transform: translate(-20px, -44px) rotate(10deg);
+    }
+  }
+
   @keyframes scroll-1 {
     10% {
       transform: translate(8px, -15px);
@@ -742,5 +787,25 @@
     }
     100% {
       transform: translate(-180px, -25px);
+    }
+  }
+  @keyframes scroll-3 {
+    10% {
+      transform: translate(35px, -5px) rotate(30deg);
+    }
+    20% {
+      transform: translate(40px, -10px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -20px) rotate(20deg);
+    }
+    40% {
+      transform: translate(30px, -10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(10px,-32px) rotate(10deg);
+    }
+    100% {
+      transform: translate(-20px, -44px) rotate(10deg);
     }
   }
