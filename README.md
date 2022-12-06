@@ -15,7 +15,7 @@ As we continue to think of new features to enhance our project, we wanted to get
 
 There are many fascets to the project that cause challenges. In particular, with only the initial page created, we were faced with the challenge of implementing our ATLAS images via URL and are still having a hard time perfectly aligning each png. Because we were able to discover similar projects, we would like to beef ours up by making it as different as possible. We'd like to enhance our designs using procreate and see how far we can push ourselves with the animations that transition from floor-to-floor. 
 
-Here is the current site: 
+Here is the current site: https://dupuyt.github.io/Front-End-Web_Dev-Final-Project/
 
 Here is the initial Figma file:
 
