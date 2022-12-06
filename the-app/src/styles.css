@@ -61,7 +61,34 @@
     width: 306px;
     height: 599px;
     margin: auto;
-    background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/9.png") center center/cover;
+    background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BF1%5D.png") center center/cover;
+    position: relative;
+    display: inline-block;
+  }
+
+  .map-floor2 {
+    width: 306px;
+    height: 599px;
+    margin: auto;
+    background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BF2%5D.png") center center/cover;
+    position: relative;
+    display: inline-block;
+  }
+
+  .map-b2 {
+    width: 306px;
+    height: 599px;
+    margin: auto;
+    background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BB2%5D.png") center center/cover;
+    position: relative;
+    display: inline-block;
+  }
+
+  .map-b1 {
+    width: 306px;
+    height: 599px;
+    margin: auto;
+    background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BB1%5D.png") center center/cover;
     position: relative;
     display: inline-block;
   }
@@ -90,7 +117,7 @@
   .map-flap.flap--1 {
     box-shadow: 0 -1px 6px rgba(97, 83, 73, 0.5);
   }
-  .map-flap.flap--1 .map-flap__front {
+  /* .map-flap.flap--1 .map-flap__front {
     background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-1.png") center left/cover;
   }
   .map-flap.flap--1 .map-flap__back {
@@ -105,7 +132,7 @@
   }
   .map-flap.flap--2 .map-flap__back {
     background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-4.png") -3px 0 / cover;
-  }
+  } */
   
   .map-side {
     height: 600px;
@@ -363,13 +390,285 @@
   .map-base.active .footsteps-2 .scroll-name {
     animation: 15s scroll-2 ease 3.2s forwards;
   }
+
+
+
+  .map-floor2.active .flap--1 {
+    transform: rotateX(180deg);
+    transform-origin: top center;
+    transition: 0.6s transform 1.5s;
+  }
+  .map-floor2.active .flap--2 {
+    transform: rotateX(180deg);
+    transform-origin: bottom center;
+    transition: 0.6s transform 1.8s;
+  }
+  .map-floor2.active .side-1 {
+    transform-origin: center left;
+    transform: rotateY(180deg) skewY(2deg);
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-floor2.active .side-1 .front {
+    transform: rotateY(180deg);
+  }
+  .map-floor2.active .side-2 {
+    transform: rotateY(180deg) skewY(-2deg);
+    transform-origin: center right;
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-floor2.active .side-2 .front {
+    transform: rotateY(180deg);
+  }
+  .map-floor2.active .side-3 {
+    left: -50%;
+    transform: skewY(2deg) translateX(-100%);
+    top: 8px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s;
+  }
+  .map-floor2.active .side-4 {
+    left: 100%;
+    transform: skewY(-2deg) translateX(100%);
+    top: 8px;
+    margin-left: -7px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s,
+      0.5s margin ease 0.8s;
+  }
+  .map-floor2.active .side-5 {
+    left: -100%;
+    transform-origin: center left;
+    transform: rotateY(180deg);
+    transition: 0.5s transform, 0.7s left 0.8s, 0.2s margin 0.8s;
+    top: 0px;
+    margin-left: 4px;
+  }
+  .map-floor2.active .side-5 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-floor2.active .side-6 {
+    left: 150%;
+    transform: rotateY(180deg);
+    transform-origin: center right;
+    margin-left: -8px;
+    transition: 0.5s transform 0.3s, 0.7s left 0.8s, 0.5s top 0.8s,
+      0.5s margin 0.8s;
+  }
+  .map-floor2.active .side-6 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-floor2.active .footstep,
+  .map-floor2.active .scroll-name {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
+  .map-floor2.active .footsteps-1 .footstep {
+    animation: 15s footsteps-1 ease 3s forwards;
+  }
+  .map-floor2.active .footsteps-1 .scroll-name {
+    animation: 15s scroll-1 ease 3s forwards;
+  }
+  .map-floor2.active .footsteps-2 .footstep {
+    animation: 15s footsteps-2 ease 3.2s forwards;
+  }
+  .map-floor2.active .footsteps-2 .scroll-name {
+    animation: 15s scroll-2 ease 3.2s forwards;
+  }
+
+
+
+  .map-b2.active .flap--1 {
+    transform: rotateX(180deg);
+    transform-origin: top center;
+    transition: 0.6s transform 1.5s;
+  }
+  .map-b2.active .flap--2 {
+    transform: rotateX(180deg);
+    transform-origin: bottom center;
+    transition: 0.6s transform 1.8s;
+  }
+  .map-b2.active .side-1 {
+    transform-origin: center left;
+    transform: rotateY(180deg) skewY(2deg);
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-b2.active .side-1 .front {
+    transform: rotateY(180deg);
+  }
+  .map-b2.active .side-2 {
+    transform: rotateY(180deg) skewY(-2deg);
+    transform-origin: center right;
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-b2.active .side-2 .front {
+    transform: rotateY(180deg);
+  }
+  .map-b2.active .side-3 {
+    left: -50%;
+    transform: skewY(2deg) translateX(-100%);
+    top: 8px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s;
+  }
+  .map-b2.active .side-4 {
+    left: 100%;
+    transform: skewY(-2deg) translateX(100%);
+    top: 8px;
+    margin-left: -7px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s,
+      0.5s margin ease 0.8s;
+  }
+  .map-b2.active .side-5 {
+    left: -100%;
+    transform-origin: center left;
+    transform: rotateY(180deg);
+    transition: 0.5s transform, 0.7s left 0.8s, 0.2s margin 0.8s;
+    top: 0px;
+    margin-left: 4px;
+  }
+  .map-b2.active .side-5 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-b2.active .side-6 {
+    left: 150%;
+    transform: rotateY(180deg);
+    transform-origin: center right;
+    margin-left: -8px;
+    transition: 0.5s transform 0.3s, 0.7s left 0.8s, 0.5s top 0.8s,
+      0.5s margin 0.8s;
+  }
+  .map-b2.active .side-6 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-b2.active .footstep,
+  .map-b2.active .scroll-name {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
+  .map-b2.active .footsteps-1 .footstep {
+    animation: 15s footsteps-1 ease 3s forwards;
+  }
+  .map-b2.active .footsteps-1 .scroll-name {
+    animation: 15s scroll-1 ease 3s forwards;
+  }
+  .map-b2.active .footsteps-2 .footstep {
+    animation: 15s footsteps-2 ease 3.2s forwards;
+  }
+  .map-b2.active .footsteps-2 .scroll-name {
+    animation: 15s scroll-2 ease 3.2s forwards;
+  }
+
+
+  .map-b1.active .flap--1 {
+    transform: rotateX(180deg);
+    transform-origin: top center;
+    transition: 0.6s transform 1.5s;
+  }
+  .map-b1.active .flap--2 {
+    transform: rotateX(180deg);
+    transform-origin: bottom center;
+    transition: 0.6s transform 1.8s;
+  }
+  .map-b1.active .side-1 {
+    transform-origin: center left;
+    transform: rotateY(180deg) skewY(2deg);
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-b1.active .side-1 .front {
+    transform: rotateY(180deg);
+  }
+  .map-b1.active .side-2 {
+    transform: rotateY(180deg) skewY(-2deg);
+    transform-origin: center right;
+    transition: 0.5s all ease-in-out 0.6s;
+  }
+  .map-b1.active .side-2 .front {
+    transform: rotateY(180deg);
+  }
+  .map-b1.active .side-3 {
+    left: -50%;
+    transform: skewY(2deg) translateX(-100%);
+    top: 8px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s;
+  }
+  .map-b1.active .side-4 {
+    left: 100%;
+    transform: skewY(-2deg) translateX(100%);
+    top: 8px;
+    margin-left: -7px;
+    transition: 0.5s transform ease 0.8s, 0.3s left ease 0.8s, 0.5s top ease 0.8s,
+      0.5s margin ease 0.8s;
+  }
+  .map-b1.active .side-5 {
+    left: -100%;
+    transform-origin: center left;
+    transform: rotateY(180deg);
+    transition: 0.5s transform, 0.7s left 0.8s, 0.2s margin 0.8s;
+    top: 0px;
+    margin-left: 4px;
+  }
+  .map-b1.active .side-5 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-b1.active .side-6 {
+    left: 150%;
+    transform: rotateY(180deg);
+    transform-origin: center right;
+    margin-left: -8px;
+    transition: 0.5s transform 0.3s, 0.7s left 0.8s, 0.5s top 0.8s,
+      0.5s margin 0.8s;
+  }
+  .map-b1.active .side-6 .front {
+    transform: rotateY(180deg);
+    transition: 0.1s transform;
+  }
+  .map-b1.active .footstep,
+  .map-b1.active .scroll-name {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
+  .map-b1.active .footsteps-1 .footstep {
+    animation: 15s footsteps-1 ease 3s forwards;
+  }
+  .map-b1.active .footsteps-1 .scroll-name {
+    animation: 15s scroll-1 ease 3s forwards;
+  }
+  .map-b1.active .footsteps-2 .footstep {
+    animation: 15s footsteps-2 ease 3.2s forwards;
+  }
+  .map-b1.active .footsteps-2 .scroll-name {
+    animation: 15s scroll-2 ease 3.2s forwards;
+  }
   
   .map8 {
-    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/8.png");
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF1%5D.png");
   }
+
+  .map81 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BB1%5D.png");
+  }
+  .map82 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BB2%5D.png");
+  }
+  .map83 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF2%5D.png");
+  }
+
   .map18 {
-    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/18.png");
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/18%20%5BF1%5D.png");
   }
+  .map181 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/18%20%5BB1%5D.png");
+  }
+  .map182 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/18%20%5BB2%5D.png");
+  }
+  .map183 {
+    --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/18%20%5BF2%5D.png");
+  }
+
   .map7 {
     --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/7.png");
   }
