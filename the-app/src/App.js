@@ -25,6 +25,7 @@ export default class App extends React.Component {
           <div className={this.state.active ? "map-base active" : "map-base"}>
             <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
             <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
+            <FootSteps name="Jill" number={3} url = "https://www.colorado.edu/atlas/jill-van-matre-dupre" />
             <MapFlap number={1} />
             <MapFlap number={2} />
             <MapSide side={1} map={8} isback={true} />
