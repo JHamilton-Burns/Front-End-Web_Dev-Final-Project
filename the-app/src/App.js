@@ -1,6 +1,5 @@
 import React from "react";
 import FootSteps from "./FootSteps.js";
-import MapFlap from "./MapFlap.js";
 import MapSide from "./MapSide.js";
 
 import "./styles.css";
@@ -11,9 +10,6 @@ export default class App extends React.Component {
     this.state = {
       active: false
     };
-    this.scene = {
-      active: false
-    }
   }
   toggleMap = () => {
     const currentState = this.state.active;
