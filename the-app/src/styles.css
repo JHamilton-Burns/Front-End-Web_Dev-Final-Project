@@ -321,7 +321,6 @@
   .map-base.active .footsteps-2 .scroll-name {
     animation: 15s scroll-2 ease 3.2s forwards;
   }
-<<<<<<< Updated upstream
 
   @keyframes footsteps-1 {
     10% {
@@ -648,14 +647,6 @@
     animation: 15s scroll-2 ease 3.2s forwards;
   }
   
-=======
-  .map-base.active .footsteps-3 .footstep {
-    animation: 15s footsteps-3 ease 3s forwards;
-  }
-  .map-base.active .footsteps-3 .scroll-name {
-    animation: 15s scroll-3 ease 3s forwards;
-  }
->>>>>>> Stashed changes
   .map8 {
     --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF1%5D.png");
   }

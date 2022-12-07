@@ -1,7 +1,7 @@
 import React, { useState }from "react";
 import FootSteps from "./FootSteps.js";
 import MapSide from "./MapSide.js";
-
+import MapFlap from "./MapFlap";
 import stairs from "./stairs.svg";
 
 import "./styles.css";
