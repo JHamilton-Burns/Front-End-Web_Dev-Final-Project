@@ -1,6 +1,5 @@
 import React, { useState }from "react";
 import FootSteps from "./FootSteps.js";
-import MapFlap from "./MapFlap.js";
 import MapSide from "./MapSide.js";
 
 import stairs from "./stairs.svg";
@@ -48,8 +47,6 @@ export default class App extends React.Component {
             <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
             <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
             <FootSteps name="Jill" number={3} url = "https://www.colorado.edu/atlas/jill-van-matre-dupre" />
-            <MapFlap number={1} />
-            <MapFlap number={2} />
             <MapSide side={1} map={8} isback={true} />
             <MapSide side={2} map={18} isback={true} />
             <div onClick={this.toggleMap}>

@@ -57,6 +57,8 @@
     margin: 4em auto;
   }
   
+/* Base Map Image Settings */
+
   .map-base {
     width: 306px;
     height: 599px;
@@ -93,47 +95,7 @@
     display: none;
   }
   
-  .map-flap {
-    transform-style: preserve-3d;
-    position: absolute;
-    width: 100%;
-    height: 25%;
-    margin: auto;
-    left: 0;
-    right: 0;
-    transition: 0.5s ease;
-    top: 25%;
-  }
-  .map-flap__front,
-  .map-flap__back {
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-  }
-  .map-flap__back {
-    transform: scale(-1) rotateY(180deg);
-  }
-  .map-flap.flap--1 {
-    box-shadow: 0 -1px 6px rgba(97, 83, 73, 0.5);
-  }
-  /* .map-flap.flap--1 .map-flap__front {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-1.png") center left/cover;
-  }
-  .map-flap.flap--1 .map-flap__back {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-3.png") -3px 0 / cover;
-  }
-  .map-flap.flap--2 {
-    box-shadow: 0 1px 6px rgba(97, 83, 73, 0.5);
-    top: 50%;
-  }
-  .map-flap.flap--2 .map-flap__front {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-2.png") center left/cover;
-  }
-  .map-flap.flap--2 .map-flap__back {
-    background: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/mini-4.png") -3px 0 / cover;
-  } */
-  
+/* Map panel placement settings */
   .map-side {
     height: 600px;
     width: 152px;
@@ -196,6 +158,8 @@
   .map-side.side-6 .back {
     background-image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/17.png");
   }
+  
+ /* Footstep and Scroll Name Settings */
   
   .scroll-name {
     position: absolute;
@@ -284,56 +248,8 @@
     left: 320px;
   }
   
-  .instructions {
-    text-align: center;
-    color: #fff;
-  }
-  .instructions p {
-    margin-bottom: 8px;
-    line-height: 1.3;
-  }
-  
-  .toggle-map {
-    border: 2px solid;
-    margin: 30px auto 0;
-    background: transparent;
-    font: 34px "Lobster Two", cursive;
-    padding: 8px 30px;
-    cursor: pointer;
-    position: relative;
-    color: #fff;
-  }
-  .toggle-map:before {
-    content: "";
-    position: absolute;
-    width: calc(100% - 8px);
-    height: 51px;
-    left: 2px;
-    top: 2px;
-    border: 2px solid;
-  }
-  .toggle-map:hover:before {
-    width: 100%;
-    height: 100%;
-    transition: 0.3s ease;
-    left: -2px;
-    top: -2px;
-    right: auto;
-  }
-  .toggle-map:focus {
-    outline: none;
-  }
-  
-  .map-base.active .flap--1 {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-    transition: 0.6s transform 1.5s;
-  }
-  .map-base.active .flap--2 {
-    transform: rotateX(180deg);
-    transform-origin: bottom center;
-    transition: 0.6s transform 1.8s;
-  }
+/* First Map Level Settings and Footstep Settings */
+
   .map-base.active .side-1 {
     transform-origin: center left;
     transform: rotateY(180deg) skewY(2deg);
@@ -405,19 +321,113 @@
   .map-base.active .footsteps-2 .scroll-name {
     animation: 15s scroll-2 ease 3.2s forwards;
   }
+<<<<<<< Updated upstream
 
-
-
-  .map-floor2.active .flap--1 {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-    transition: 0.6s transform 1.5s;
+  @keyframes footsteps-1 {
+    10% {
+      transform: translate(8px, -15px) rotate(30deg);
+    }
+    20% {
+      transform: translate(30px, -45px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -75px) rotate(20deg);
+    }
+    40% {
+      transform: translate(45px, -100px) rotate(10deg);
+    }
+    50% {
+      transform: translate(50px, -125px) rotate(10deg);
+    }
+    60% {
+      transform: translate(50px, -135px) rotate(10deg);
+    }
+    100% {
+      transform: translate(50px, -135px) rotate(20deg);
+    }
   }
-  .map-floor2.active .flap--2 {
-    transform: rotateX(180deg);
-    transform-origin: bottom center;
-    transition: 0.6s transform 1.8s;
+  @keyframes footsteps-2 {
+    80% {
+      transform: translate(-170px, -25px) rotate(-90deg);
+    }
+    100% {
+      transform: translate(-180px, -25px) rotate(-90deg);
+    }
   }
+  @keyframes footsteps-3 {
+    10% {
+      transform: translate(35px, -5px) rotate(30deg);
+    }
+    20% {
+      transform: translate(40px, -10px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -20px) rotate(20deg);
+    }
+    40% {
+      transform: translate(30px, -10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(10px,-32px) rotate(10deg);
+    }
+    100% {
+      transform: translate(-20px, -44px) rotate(10deg);
+    }
+  }
+  @keyframes scroll-1 {
+    10% {
+      transform: translate(8px, -15px);
+    }
+    20% {
+      transform: translate(30px, -45px);
+    }
+    30% {
+      transform: translate(40px, -75px);
+    }
+    40% {
+      transform: translate(45px, -100px);
+    }
+    50% {
+      transform: translate(50px, -125px);
+    }
+    60% {
+      transform: translate(50px, -135px);
+    }
+    100% {
+      transform: translate(50px, -135px);
+    }
+  }
+  @keyframes scroll-2 {
+    80% {
+      transform: translate(-170px, -25px);
+    }
+    100% {
+      transform: translate(-180px, -25px);
+    }
+  }
+  @keyframes scroll-3 {
+    10% {
+      transform: translate(35px, -5px) rotate(30deg);
+    }
+    20% {
+      transform: translate(40px, -10px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -20px) rotate(20deg);
+    }
+    40% {
+      transform: translate(30px, -10px) rotate(10deg);
+    }
+    50% {
+      transform: translate(10px,-32px) rotate(10deg);
+    }
+    100% {
+      transform: translate(-20px, -44px) rotate(10deg);
+    }
+  }
+
+  /* Second Floor Map Level Settings and Footstep Settings */
+
   .map-floor2.active .side-1 {
     transform-origin: center left;
     transform: rotateY(180deg) skewY(2deg);
@@ -490,18 +500,8 @@
     animation: 15s scroll-2 ease 3.2s forwards;
   }
 
+    /* Third Floor Map Level Settings and Footstep Settings */
 
-
-  .map-b2.active .flap--1 {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-    transition: 0.6s transform 1.5s;
-  }
-  .map-b2.active .flap--2 {
-    transform: rotateX(180deg);
-    transform-origin: bottom center;
-    transition: 0.6s transform 1.8s;
-  }
   .map-b2.active .side-1 {
     transform-origin: center left;
     transform: rotateY(180deg) skewY(2deg);
@@ -574,17 +574,8 @@
     animation: 15s scroll-2 ease 3.2s forwards;
   }
 
+/* Fourth Floor Map Level Settings and Footstep Settings */
 
-  .map-b1.active .flap--1 {
-    transform: rotateX(180deg);
-    transform-origin: top center;
-    transition: 0.6s transform 1.5s;
-  }
-  .map-b1.active .flap--2 {
-    transform: rotateX(180deg);
-    transform-origin: bottom center;
-    transition: 0.6s transform 1.8s;
-  }
   .map-b1.active .side-1 {
     transform-origin: center left;
     transform: rotateY(180deg) skewY(2deg);
@@ -657,12 +648,14 @@
     animation: 15s scroll-2 ease 3.2s forwards;
   }
   
+=======
   .map-base.active .footsteps-3 .footstep {
     animation: 15s footsteps-3 ease 3s forwards;
   }
   .map-base.active .footsteps-3 .scroll-name {
     animation: 15s scroll-3 ease 3s forwards;
   }
+>>>>>>> Stashed changes
   .map8 {
     --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF1%5D.png");
   }
@@ -805,13 +798,4 @@
     100% {
       transform: translate(-20px, -44px) rotate(10deg);
     }
-  }
-
-  .staircase {
-    width: 15%;
-    height: 15%;
-    z-index: 10;
-    position: absolute;
-    top: 110px;
-    right: 165px;
   }
