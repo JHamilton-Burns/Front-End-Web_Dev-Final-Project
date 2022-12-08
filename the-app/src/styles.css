@@ -74,7 +74,7 @@
     margin: auto;
     background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BF2%5D.png") center center/cover;
     position: relative;
-    display: inline-block;
+    display: none;
   }
 
   .map-b2 {
@@ -83,7 +83,7 @@
     margin: auto;
     background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BB2%5D.png") center center/cover;
     position: relative;
-    display: inline-block;
+    display: none;
   }
 
   .map-b1 {
@@ -92,7 +92,7 @@
     margin: auto;
     background: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/9%20%5BB1%5D.png") center center/cover;
     position: relative;
-    display: inline-block;
+    display: none;
   }
   
 /* Map panel placement settings */

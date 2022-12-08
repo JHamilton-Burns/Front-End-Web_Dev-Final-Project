@@ -14,9 +14,10 @@ export default class App extends React.Component {
       active1: false,
       active2: false,
       active3: false,
-
     };
+
   }
+
   toggleMap = () => {
     const currentState = this.state.active;
     this.setState({ active: !currentState });
@@ -29,8 +30,11 @@ export default class App extends React.Component {
 
     const currentState = this.state.active1;
     this.setState({ active1: !currentState });
+    
 
   }
+
+
 
   changeFloors2 = () => {
     this.state = {
@@ -73,7 +77,7 @@ export default class App extends React.Component {
             <MapSide side={6} map={11} isback={true} />
             </div>
           </div>
-          <div className={this.state.active1 ? "map-floor2 active" : "map-floor2"}>
+          <div className={this.state.active1 ? "map-floor2 active" : "map-floor2"} style={{display: "inline-block"}}>
               <div onClick={this.changeFloors2}> 
               <img src={stairs} className="staircase" alt="stairs"/>
               </div>
