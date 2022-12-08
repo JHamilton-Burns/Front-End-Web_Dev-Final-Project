@@ -14,8 +14,8 @@ export default class App extends React.Component {
       active2: false,
       active3: false,
     };
-
   }
+
 
   toggleMap = () => {
     const currentState = this.state.active;
@@ -29,8 +29,6 @@ export default class App extends React.Component {
 
     const currentState = this.state.active1;
     this.setState({ active1: !currentState });
-    
-
   }
 
 
@@ -40,7 +38,7 @@ export default class App extends React.Component {
       active1: false
     };
 
-    const currentState = this.state.active1;
+    const currentState = this.state.active2;
     this.setState({ active2: !currentState });
 
   }
@@ -50,16 +48,34 @@ export default class App extends React.Component {
       active2: false
     };
 
-    const currentState = this.state.active1;
+    const currentState = this.state.active3;
     this.setState({ active3: !currentState });
-
   }
 
   render() {
+    let cssPropertiesBase = {}
+    let cssPropertiesf2 = {}
+    let cssPropertiesb2 = {}
+    let cssPropertiesb1 = {}
+    if (this.state.active1) {
+      cssPropertiesBase['display'] = 'none'
+      cssPropertiesf2['display'] = 'inline-block'
+    }
+    if (this.state.active2) {
+      cssPropertiesf2['display'] = 'none'
+      cssPropertiesb2['display'] = 'inline-block'
+    }
+    if (this.state.active3) {
+      cssPropertiesb2['display'] = 'none'
+      cssPropertiesb1['display'] = 'inline-block'
+    }
+
+
+
     return (
       <div className="App">
         <div className="main-content">
-          <div className={this.state.active ? "map-base active" : "map-base"}>
+          <div className={this.state.active ? "map-base active" : "map-base"} style={cssPropertiesBase}>
             <div onClick={this.changeFloors1}> 
             <img src={stairs} className="staircase" alt="stairs"/>
             </div>
@@ -76,7 +92,7 @@ export default class App extends React.Component {
             <MapSide side={6} map={11} isback={true} />
             </div>
           </div>
-          <div className={this.state.active1 ? "map-floor2 active" : "map-floor2"} style={{display: "inline-block"}}>
+          <div className={this.state.active1 ? "map-floor2 active" : "map-floor2"} style={cssPropertiesf2}>
               <div onClick={this.changeFloors2}> 
               <img src={stairs} className="staircase" alt="stairs"/>
               </div>
@@ -92,7 +108,7 @@ export default class App extends React.Component {
                <MapSide side={6} map={11} isback={true} />
                </div>
              </div>
-               <div className={this.state.active2 ? "map-b2 active" : "map-b2"}>
+               <div className={this.state.active2 ? "map-b2 active" : "map-b2"} style={cssPropertiesb2}>
                 <div onClick={this.changeFloors3}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                 </div>
@@ -108,7 +124,7 @@ export default class App extends React.Component {
                  <MapSide side={6} map={11} isback={true} />
                  </div>
                </div>
-               <div className={this.state.active3 ? "map-b1 active" : "map-b1"}>
+               <div className={this.state.active3 ? "map-b1 active" : "map-b1"} style={cssPropertiesb1}>
                <div onClick={this.changeFloors}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                </div>
