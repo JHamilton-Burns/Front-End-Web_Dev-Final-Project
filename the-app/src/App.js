@@ -10,7 +10,11 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: false,
+      active1: false,
+      active2: false,
+      active3: false,
+
     };
   }
   toggleMap = () => {
@@ -18,30 +22,42 @@ export default class App extends React.Component {
     this.setState({ active: !currentState });
   };
 
-  changeFloors = () => {
-    const floors = ["map-base","map-floor2","map-b2","map-b1"]
+  changeFloors1 = () => {
+    this.state = {
+      active: false
+    };
 
-    
-    const setActiveFloor = useState(0);
+    const currentState = this.state.active1;
+    this.setState({ active1: !currentState });
 
-    const randomFloors = e => {
-        const len = floors.length;
-        setActiveFloor(Math.floor(Math.random() * len));
-      };
-
-    var cls = `${randomFloors}`;
-    if (cls.isActive) {
-    cls += 'inline-block';
-    }
   }
 
+  changeFloors2 = () => {
+    this.state = {
+      active1: false
+    };
+
+    const currentState = this.state.active1;
+    this.setState({ active2: !currentState });
+
+  }
+
+  changeFloors3 = () => {
+    this.state = {
+      active2: false
+    };
+
+    const currentState = this.state.active1;
+    this.setState({ active3: !currentState });
+
+  }
 
   render() {
     return (
       <div className="App">
         <div className="main-content">
           <div className={this.state.active ? "map-base active" : "map-base"}>
-            <div onClick={this.changeFloors}> 
+            <div onClick={this.changeFloors1}> 
             <img src={stairs} className="staircase" alt="stairs"/>
             </div>
             <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
@@ -57,8 +73,8 @@ export default class App extends React.Component {
             <MapSide side={6} map={11} isback={true} />
             </div>
           </div>
-          <div className={this.state.active ? "map-floor2 active" : "map-floor2"}>
-              <div onClick={this.changeFloors}> 
+          <div className={this.state.active1 ? "map-floor2 active" : "map-floor2"}>
+              <div onClick={this.changeFloors2}> 
               <img src={stairs} className="staircase" alt="stairs"/>
               </div>
                <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
@@ -75,8 +91,8 @@ export default class App extends React.Component {
                <MapSide side={6} map={11} isback={true} />
                </div>
              </div>
-               <div className={this.state.active ? "map-b2 active" : "map-b2"}>
-                <div onClick={this.changeFloors}> 
+               <div className={this.state.active2 ? "map-b2 active" : "map-b2"}>
+                <div onClick={this.changeFloors3}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                 </div>
                  <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
@@ -93,7 +109,7 @@ export default class App extends React.Component {
                  <MapSide side={6} map={11} isback={true} />
                  </div>
                </div>
-               <div className={this.state.active ? "map-b1 active" : "map-b1"}>
+               <div className={this.state.active3 ? "map-b1 active" : "map-b1"}>
                <div onClick={this.changeFloors}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                </div>
@@ -112,11 +128,8 @@ export default class App extends React.Component {
                </div>
             </div>
         </div>
-      </div>
-
-    );
+        </div>
+    )
   }
 }
-
-
-            
+   
