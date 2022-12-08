@@ -96,8 +96,9 @@ export default class App extends React.Component {
               <div onClick={this.changeFloors2}> 
               <img src={stairs} className="staircase" alt="stairs"/>
               </div>
-               <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
-               <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
+               <FootSteps name="Ruscha" number={4} url = "https://www.colorado.edu/atlas/ruscha-cohen" />
+               <FootSteps name="Justin" number={5} url = "https://www.colorado.edu/atlas/justin-gitlin" />
+               <FootSteps name="Danny" number={6} url = "https://www.colorado.edu/atlas/danny-rankin-0" />
                <MapSide side={1} map={83} isback={true} />
                <MapSide side={2} map={183} isback={true} />
                <div onClick={this.toggleMap}>
@@ -112,8 +113,8 @@ export default class App extends React.Component {
                 <div onClick={this.changeFloors3}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                 </div>
-                 <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
-                 <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
+                 <FootSteps name="Joel" number={7} url = "https://www.colorado.edu/atlas/joel-swanson" />
+                 <FootSteps name="Mark" number={8} url = "https://www.colorado.edu/atlas/mark-d-gross" />
                  <MapSide side={1} map={82} isback={true} />
                  <MapSide side={2} map={182} isback={true} />
                  <div onClick={this.toggleMap}>
@@ -128,8 +129,8 @@ export default class App extends React.Component {
                <div onClick={this.changeFloors}> 
                 <img src={stairs} className="staircase" alt="stairs"/>
                </div>
-               <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
-               <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
+               <FootSteps name="John" number={9} url = "https://www.colorado.edu/atlas/john-weiss-0" />
+               <FootSteps name="Zef" number={10} url = "https://www.colorado.edu/atlas/zef-houssney" />
                <MapSide side={1} map={81} isback={true} />
                <MapSide side={2} map={181} isback={true} />
                <div onClick={this.toggleMap}>

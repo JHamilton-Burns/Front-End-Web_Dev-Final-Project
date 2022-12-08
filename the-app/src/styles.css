@@ -237,7 +237,6 @@
     left: 28px;
     transform: rotate(30deg);
   }
-  
   .footsteps-2 .footstep.left {
     bottom: 285px;
     left: 280px;
@@ -252,22 +251,123 @@
     bottom: 300px;
     left: 220px;
   }
-
   .footsteps-3 .footstep.left {
     bottom: 385px;
     left: 380px;
-    transform: rotate(-90deg);
+    transform: rotate(-30deg);
   }
   .footsteps-3 .footstep.right {
     bottom: 375px;
     left: 385px;
-    transform: rotate(-85deg);
+    transform: rotate(-30deg);
   }
   .footsteps-3 .scroll-name {
     bottom: 400px;
     left: 320px;
   }
-  
+
+  .footsteps-4 .footstep.left {
+    bottom: 185px;
+    left: 180px;
+    transform: rotate(90deg);
+  }
+  .footsteps-4 .footstep.right {
+    bottom: 175px;
+    left: 185px;
+    transform: rotate(85deg);
+  }
+  .footsteps-4 .scroll-name {
+    bottom: 200px;
+    left: 120px;
+  }
+
+  .footsteps-5 .footstep.left {
+    bottom: 500px;
+    left: 10px;
+    transform: rotate(90deg);
+  }
+  .footsteps-5 .footstep.right {
+    bottom: 490px;
+    left: 10px;
+    transform: rotate(95deg);
+  }
+  .footsteps-5 .scroll-name {
+    bottom: 450px;
+    left: -70px;
+  }
+
+  .footsteps-6 .footstep.left {
+    bottom: 385px;
+    left: 320px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-6 .footstep.right {
+    bottom: 375px;
+    left: 315px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-6 .scroll-name {
+    bottom: 400px;
+    left: 240px;
+  }
+
+  .footsteps-7 .footstep.left {
+    bottom: 185px;
+    left: 380px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-7 .footstep.right {
+    bottom: 175px;
+    left: 385px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-7 .scroll-name {
+    bottom: 140px;
+    left: 300px;
+  }
+  .footsteps-8 .footstep.left {
+    bottom: 250px;
+    left: 200px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-8 .footstep.right {
+    bottom: 240px;
+    left: 190px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-8 .scroll-name {
+    bottom: 210px;
+    left: 120px;
+  }
+
+  .footsteps-9 .footstep.left {
+    bottom: 335px;
+    left: 350px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-9 .footstep.right {
+    bottom: 345px;
+    left: 355px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-9 .scroll-name {
+    bottom: 360px;
+    left: 270px;
+  }
+  .footsteps-10 .footstep.left {
+    bottom: 185px;
+    left: 180px;
+    transform: rotate(-90deg);
+  }
+  .footsteps-10 .footstep.right {
+    bottom: 175px;
+    left: 185px;
+    transform: rotate(-85deg);
+  }
+  .footsteps-10 .scroll-name {
+    bottom: 200px;
+    left: 120px;
+  }
 /* First Map Level Settings and Footstep Settings */
 
   .map-base.active .side-1 {
@@ -342,6 +442,12 @@
   .map-base.active .footsteps-2 .scroll-name {
     animation: 15s scroll-2 ease 3.2s forwards;
   }
+  .map-base.active .footsteps-3 .footstep {
+    animation: 15s footsteps-3 ease 3.2s forwards;
+  }
+  .map-base.active .footsteps-3 .scroll-name {
+    animation: 15s scroll-3 ease 3.2s forwards;
+  }
 
   @keyframes footsteps-1 {
     10% {
@@ -385,13 +491,13 @@
       transform: translate(40px, -20px) rotate(20deg);
     }
     40% {
-      transform: translate(30px, -10px) rotate(10deg);
+      transform: translate(30px, -10px) rotate(-40deg);
     }
     50% {
-      transform: translate(10px,-32px) rotate(10deg);
+      transform: translate(10px,-32px) rotate(-80deg);
     }
     100% {
-      transform: translate(-20px, -44px) rotate(10deg);
+      transform: translate(-20px, -44px) rotate(-90deg);
     }
   }
   @keyframes scroll-1 {
@@ -427,22 +533,22 @@
   }
   @keyframes scroll-3 {
     10% {
-      transform: translate(35px, -5px) rotate(30deg);
+      transform: translate(35px, -5px);
     }
     20% {
-      transform: translate(40px, -10px) rotate(30deg);
+      transform: translate(40px, -10px);
     }
     30% {
-      transform: translate(40px, -20px) rotate(20deg);
+      transform: translate(40px, -20px);
     }
     40% {
-      transform: translate(30px, -10px) rotate(10deg);
+      transform: translate(30px, -10px);
     }
     50% {
-      transform: translate(10px,-32px) rotate(10deg);
+      transform: translate(10px,-32px);
     }
     100% {
-      transform: translate(-20px, -44px) rotate(10deg);
+      transform: translate(-20px, -44px);
     }
   }
 
@@ -512,17 +618,120 @@
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }
-  .map-floor2.active .footsteps-1 .footstep {
-    animation: 15s footsteps-1 ease 3s forwards;
+  .map-floor2.active .footsteps-4 .footstep {
+    animation: 15s footsteps-4 ease 3s forwards;
   }
-  .map-floor2.active .footsteps-1 .scroll-name {
-    animation: 15s scroll-1 ease 3s forwards;
+  .map-floor2.active .footsteps-4 .scroll-name {
+    animation: 15s scroll-4 ease 3s forwards;
   }
-  .map-floor2.active .footsteps-2 .footstep {
-    animation: 15s footsteps-2 ease 3.2s forwards;
+  .map-floor2.active .footsteps-5 .footstep {
+    animation: 15s footsteps-5 ease 3.2s forwards;
   }
-  .map-floor2.active .footsteps-2 .scroll-name {
-    animation: 15s scroll-2 ease 3.2s forwards;
+  .map-floor2.active .footsteps-5 .scroll-name {
+    animation: 15s scroll-5 ease 3.2s forwards;
+  }
+  .map-floor2.active .footsteps-6 .footstep {
+    animation: 15s footsteps-6 ease 3.2s forwards;
+  }
+  .map-floor2.active .footsteps-6 .scroll-name {
+    animation: 15s scroll-6 ease 3.2s forwards;
+  }
+
+  @keyframes footsteps-4 {
+    10% {
+      transform: translate(8px, -15px) rotate(30deg);
+    }
+    20% {
+      transform: translate(30px, -45px) rotate(30deg);
+    }
+    30% {
+      transform: translate(40px, -75px) rotate(20deg);
+    }
+    40% {
+      transform: translate(45px, -100px) rotate(10deg);
+    }
+    50% {
+      transform: translate(50px, -125px) rotate(10deg);
+    }
+    60% {
+      transform: translate(50px, -135px) rotate(10deg);
+    }
+    100% {
+      transform: translate(50px, -135px) rotate(20deg);
+    }
+  }
+  @keyframes footsteps-5 {
+    80% {
+      transform: translate(170px, -25px) rotate(90deg);
+    }
+    100% {
+      transform: translate(180px, -25px) rotate(85deg);
+    }
+  }
+  @keyframes footsteps-6 {
+    10% {
+      transform: translate(-35px, -15px) rotate(-90deg);
+    }
+    30% {
+      transform: translate(-40px, -20px) rotate(-85deg);
+    }
+    40% {
+      transform: translate(-40px, -20px) rotate(-180deg);
+    }
+    50% {
+      transform: translate(-40px, 0px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-40px, 20px) rotate(-180deg);
+    }
+  }
+  @keyframes scroll-4 {
+    10% {
+      transform: translate(8px, -15px);
+    }
+    20% {
+      transform: translate(30px, -45px);
+    }
+    30% {
+      transform: translate(40px, -75px);
+    }
+    40% {
+      transform: translate(45px, -100px);
+    }
+    50% {
+      transform: translate(50px, -125px);
+    }
+    60% {
+      transform: translate(50px, -135px);
+    }
+    100% {
+      transform: translate(50px, -135px);
+    }
+  }
+  @keyframes scroll-5 {
+    80% {
+      transform: translate(170px, -25px);
+    }
+    100% {
+      transform: translate(180px, -25px);
+    }
+  }
+  @keyframes scroll-6 {
+    10% {
+      transform: translate(-35px, -15px);
+    }
+    30% {
+      transform: translate(-40px, -20px);
+    }
+    40% {
+      transform: translate(-40px, -20px);
+    }
+    50% {
+      transform: translate(-40px, 0px);
+    }
+    100% {
+      transform: translate(-40px, 20px);
+    }
   }
 
     /* Third Floor Map Level Settings and Footstep Settings */
@@ -590,17 +799,68 @@
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }
-  .map-b2.active .footsteps-1 .footstep {
-    animation: 15s footsteps-1 ease 3s forwards;
+  .map-b2.active .footsteps-7 .footstep {
+    animation: 15s footsteps-7 ease 3s forwards;
   }
-  .map-b2.active .footsteps-1 .scroll-name {
-    animation: 15s scroll-1 ease 3s forwards;
+  .map-b2.active .footsteps-7 .scroll-name {
+    animation: 15s scroll-7 ease 3s forwards;
   }
-  .map-b2.active .footsteps-2 .footstep {
-    animation: 15s footsteps-2 ease 3.2s forwards;
+  .map-b2.active .footsteps-8 .footstep {
+    animation: 15s footsteps-8 ease 3.2s forwards;
   }
-  .map-b2.active .footsteps-2 .scroll-name {
-    animation: 15s scroll-2 ease 3.2s forwards;
+  .map-b2.active .footsteps-8 .scroll-name {
+    animation: 15s scroll-8 ease 3.2s forwards;
+  }
+
+  @keyframes footsteps-7 {
+    80% {
+      transform: translate(-170px, -25px) rotate(-90deg);
+    }
+    100% {
+      transform: translate(-180px, -25px) rotate(-85deg);
+    }
+  }
+  @keyframes scroll-7 {
+    80% {
+      transform: translate(-170px, -25px);
+    }
+    100% {
+      transform: translate(-180px, -25px);
+    }
+  }
+  @keyframes footsteps-8 {
+    10% {
+      transform: translate(-35px, -15px) rotate(-90deg);
+    }
+    30% {
+      transform: translate(-40px, -20px) rotate(-85deg);
+    }
+    40% {
+      transform: translate(-40px, -20px) rotate(-180deg);
+    }
+    50% {
+      transform: translate(-40px, 0px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-40px, 20px) rotate(-180deg);
+    }
+  }
+  @keyframes scroll-8 {
+    10% {
+      transform: translate(-35px, -15px);
+    }
+    30% {
+      transform: translate(-40px, -20px);
+    }
+    40% {
+      transform: translate(-40px, -20px);
+    }
+    50% {
+      transform: translate(-40px, 0px);
+    }
+    100% {
+      transform: translate(-40px, 20px);
+    }
   }
 
 /* Fourth Floor Map Level Settings and Footstep Settings */
@@ -668,19 +928,71 @@
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }
-  .map-b1.active .footsteps-1 .footstep {
-    animation: 15s footsteps-1 ease 3s forwards;
+  .map-b1.active .footsteps-9 .footstep {
+    animation: 15s footsteps-9 ease 3s forwards;
   }
-  .map-b1.active .footsteps-1 .scroll-name {
-    animation: 15s scroll-1 ease 3s forwards;
+  .map-b1.active .footsteps-9 .scroll-name {
+    animation: 15s scroll-9 ease 3s forwards;
   }
-  .map-b1.active .footsteps-2 .footstep {
-    animation: 15s footsteps-2 ease 3.2s forwards;
+  .map-b1.active .footsteps-10 .footstep {
+    animation: 15s footsteps-10 ease 3.2s forwards;
   }
-  .map-b1.active .footsteps-2 .scroll-name {
-    animation: 15s scroll-2 ease 3.2s forwards;
+  .map-b1.active .footsteps-10 .scroll-name {
+    animation: 15s scroll-10 ease 3.2s forwards;
   }
   
+  @keyframes footsteps-9 {
+    80% {
+      transform: translate(-170px, -25px) rotate(-90deg);
+    }
+    100% {
+      transform: translate(-180px, -25px) rotate(-85deg);
+    }
+  }
+  @keyframes scroll-9 {
+    80% {
+      transform: translate(-170px, -25px);
+    }
+    100% {
+      transform: translate(-180px, -25px);
+    }
+  }
+  @keyframes footsteps-10 {
+    10% {
+      transform: translate(-35px, -15px) rotate(-90deg);
+    }
+    30% {
+      transform: translate(-40px, -20px) rotate(-85deg);
+    }
+    40% {
+      transform: translate(-40px, -20px) rotate(-180deg);
+    }
+    50% {
+      transform: translate(-40px, 0px) rotate(-180deg);
+    }
+    100% {
+      transform: translate(-40px, 20px) rotate(-180deg);
+    }
+  }
+  @keyframes scroll-10 {
+    10% {
+      transform: translate(-35px, -15px);
+    }
+    30% {
+      transform: translate(-40px, -20px);
+    }
+    40% {
+      transform: translate(-40px, -20px);
+    }
+    50% {
+      transform: translate(-40px, 0px);
+    }
+    100% {
+      transform: translate(-40px, 20px);
+    }
+  }
+
+
   .map8 {
     --image: url("https://raw.githubusercontent.com/JHamilton-Burns/ATLS-Front-End-Web-Development/main/code/class-portal/HP%20Images/8%20%5BF1%5D.png");
   }
@@ -720,111 +1032,6 @@
   .map11 {
     --image: url("https://rawcdn.githack.com/aakashapoorv/Marauder-Map-in-React/38904ba2bd14605682c10e56bd306597fb334c22/public/img/11.png");
   }
-  
-  @keyframes footsteps-1 {
-    10% {
-      transform: translate(8px, -15px) rotate(30deg);
-    }
-    20% {
-      transform: translate(30px, -45px) rotate(30deg);
-    }
-    30% {
-      transform: translate(40px, -75px) rotate(20deg);
-    }
-    40% {
-      transform: translate(45px, -100px) rotate(10deg);
-    }
-    50% {
-      transform: translate(50px, -125px) rotate(10deg);
-    }
-    60% {
-      transform: translate(50px, -135px) rotate(10deg);
-    }
-    100% {
-      transform: translate(50px, -135px) rotate(20deg);
-    }
-  }
-  @keyframes footsteps-2 {
-    80% {
-      transform: translate(-170px, -25px) rotate(-90deg);
-    }
-    100% {
-      transform: translate(-180px, -25px) rotate(-90deg);
-    }
-  }
-  @keyframes footsteps-3 {
-    10% {
-      transform: translate(35px, -5px) rotate(30deg);
-    }
-    20% {
-      transform: translate(40px, -10px) rotate(30deg);
-    }
-    30% {
-      transform: translate(40px, -20px) rotate(20deg);
-    }
-    40% {
-      transform: translate(30px, -10px) rotate(10deg);
-    }
-    50% {
-      transform: translate(10px,-32px) rotate(10deg);
-    }
-    100% {
-      transform: translate(-20px, -44px) rotate(10deg);
-    }
-  }
-
-  @keyframes scroll-1 {
-    10% {
-      transform: translate(8px, -15px);
-    }
-    20% {
-      transform: translate(30px, -45px);
-    }
-    30% {
-      transform: translate(40px, -75px);
-    }
-    40% {
-      transform: translate(45px, -100px);
-    }
-    50% {
-      transform: translate(50px, -125px);
-    }
-    60% {
-      transform: translate(50px, -135px);
-    }
-    100% {
-      transform: translate(50px, -135px);
-    }
-  }
-  @keyframes scroll-2 {
-    80% {
-      transform: translate(-170px, -25px);
-    }
-    100% {
-      transform: translate(-180px, -25px);
-    }
-  }
-  @keyframes scroll-3 {
-    10% {
-      transform: translate(35px, -5px) rotate(30deg);
-    }
-    20% {
-      transform: translate(40px, -10px) rotate(30deg);
-    }
-    30% {
-      transform: translate(40px, -20px) rotate(20deg);
-    }
-    40% {
-      transform: translate(30px, -10px) rotate(10deg);
-    }
-    50% {
-      transform: translate(10px,-32px) rotate(10deg);
-    }
-    100% {
-      transform: translate(-20px, -44px) rotate(10deg);
-    }
-  }
-
   .staircase {
     width: 15%;
     height: 15%;
