@@ -179,7 +179,27 @@
     display: inline-block;
     margin: 4px 0 0 15px;
   }
-  
+
+  .staircase {
+    position: absolute;
+    width: 6px;
+    height: 12px;
+    border-radius: 80% 80% 70% 70%/130% 130% 25% 25%;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  .staircase:before {
+    content: "";
+    position: absolute;
+    border-radius: 6px;
+    width: 5px;
+    height: 5px;
+    top: 110%;
+    left: 0px;
+    border-radius: 0 0 100% 100%;
+  }
+
   .footstep {
     position: absolute;
     background: #615349;
@@ -487,6 +507,11 @@
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }
+
+  .map-floor2.active .staircase {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
   .map-floor2.active .footsteps-1 .footstep {
     animation: 15s footsteps-1 ease 3s forwards;
   }
@@ -561,6 +586,10 @@
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }
+  .map-b2.active .staircase {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
   .map-b2.active .footsteps-1 .footstep {
     animation: 15s footsteps-1 ease 3s forwards;
   }
@@ -632,6 +661,10 @@
   }
   .map-b1.active .footstep,
   .map-b1.active .scroll-name {
+    opacity: 1;
+    transition: 0.5s opacity 2.5s;
+  }
+  .map-b1.active .staircase {
     opacity: 1;
     transition: 0.5s opacity 2.5s;
   }

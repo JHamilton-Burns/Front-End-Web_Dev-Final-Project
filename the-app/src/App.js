@@ -1,7 +1,6 @@
 import React, { useState }from "react";
 import FootSteps from "./FootSteps.js";
 import MapSide from "./MapSide.js";
-import MapFlap from "./MapFlap";
 import stairs from "./stairs.svg";
 
 import "./styles.css";
@@ -79,8 +78,6 @@ export default class App extends React.Component {
               </div>
                <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
                <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
-               <MapFlap number={1} />
-               <MapFlap number={2} />
                <MapSide side={1} map={83} isback={true} />
                <MapSide side={2} map={183} isback={true} />
                <div onClick={this.toggleMap}>
@@ -97,8 +94,6 @@ export default class App extends React.Component {
                 </div>
                  <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
                  <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
-                 <MapFlap number={1} />
-                 <MapFlap number={2} />
                  <MapSide side={1} map={82} isback={true} />
                  <MapSide side={2} map={182} isback={true} />
                  <div onClick={this.toggleMap}>
@@ -115,8 +110,6 @@ export default class App extends React.Component {
                </div>
                <FootSteps name="Peter" number={1} url = "https://www.colorado.edu/atlas/peter-rosenthal" />
                <FootSteps name="Dr.Z" number={2} url = "https://www.colorado.edu/atlas/shaz-zamore" />
-               <MapFlap number={1} />
-               <MapFlap number={2} />
                <MapSide side={1} map={81} isback={true} />
                <MapSide side={2} map={181} isback={true} />
                <div onClick={this.toggleMap}>
