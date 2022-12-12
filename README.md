@@ -1,7 +1,7 @@
 # Front-End-Web_Dev-Final-Project
 Taylor, Jessie, Megan
 
-# Project 1 WIP Check-in
+# Project 3 WIP Check-in
 ## Milestone 2
 ### INITIAL TAKEAWAYS: 
 
@@ -26,3 +26,9 @@ Here are images from the site after coding:
 <img width="323" alt="Screen Shot 2022-11-28 at 3 50 42 PM" src="https://user-images.githubusercontent.com/89480750/204397856-9cece053-674c-41f7-80af-e348f1941d5a.png">
 
 <img width="1224" alt="Screen Shot 2022-11-28 at 3 50 53 PM" src="https://user-images.githubusercontent.com/89480750/204397865-07405574-e81d-4a24-b13c-af13225f2c7e.png">
+
+# Project 3 
+## Milestone 4
+### REFLECTION: 
+
+As I mentioned, previous group projects have been a massive challenge for me. However, this group disproved my theory that group projects are the worst. We worked incredibly well together and followed along with our established roles from start to finish. What blew me away, was that we all equally put in work and teamed up to find solutions to our problems. We had several challenges processing our code. For example, it was incredibly difficult to find a solution to our on click stair function while allowing for each image panel to link together. We worked for 4 hours together on a Zoom call and agreed to grab dinner and work on solutions seperately. We planned to get together later in the evening to bring to the group the solutions we tested. This was the best decision for our group. Grinding away seperately helped us try unique solutions and Megan discovered a working solution that helped us create our final product. Another challenge we had was having the stairs disappear when the map was closed. I discovered the solution when we took our dinner break after playing with the CSS file. Ultimatley, I believe this project taught me a lot about branches and forking in GitHub. It also was a great lesson to see how other people approach coding problems. In the end, I believe the biggest lesson was stepping away. The more you stare at the code, the harder it is to find a solution. Walking away and regrouping saved our project! 
